@@ -11,12 +11,13 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = anno
 TEMPLATE = app
 
+QMAKE_CXXFLAGS += -std=c++11
+
 win32 {
     LIBS += Shell32.lib
 }
 
 SOURCES += main.cpp \
-    mainwindow.cpp \
     mainwindow.cpp \
     QResultImageView/QResultImageView.cpp \
     QResultImageView/qt-image-flood-fill/qfloodfill.cpp \

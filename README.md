@@ -13,4 +13,5 @@ A desktop application that can be used to annotate images for semantic segmentat
 3. Build the project using:
 	
 	> QT_SELECT=qt5 qmake
+
 	> make
