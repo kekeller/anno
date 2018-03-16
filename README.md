@@ -1,7 +1,7 @@
 # anno 
 A desktop application that can be used to annotate images for semantic segmentation purposes. This fork is designed for labelling a dataset used for crop coverage classification at ETH Zurich. 
 
-#Installation Linux
+# Installation Linux
 1. Make sure to init the git submodules:
 	
 	git submodule update --init --recursive

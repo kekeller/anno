@@ -96,6 +96,7 @@ void MainWindow::init()
     createImageView();
 
     image->setMarkingRadius(markingRadius->value());
+    printf("init main window\n");
 
     const QSettings settings(companyName, applicationName);
     const QString defaultDirectory = settings.value("defaultDirectory").toString();
@@ -130,6 +131,7 @@ void MainWindow::initImageIO()
     buffer.open(QBuffer::WriteOnly);
     image.save(&buffer, "JPG", 85);
     buffer.close();
+
 }
 
 void MainWindow::createImageView()
@@ -196,11 +198,12 @@ void MainWindow::createToolList()
 
         connect(markingsVisible, SIGNAL(toggled(bool)), this, SLOT(onMarkingsVisible(bool)));
     }
+    printf("setting up\n");
 
     bool radiusOk = false;
     int radius = settings.value("markingRadius").toInt(&radiusOk);
     if (!radiusOk) {
-        radius = 10;
+        radius = 5;
     }
 
     QWidget* markingRadiusWidget = new QWidget(this);
@@ -393,10 +396,15 @@ void MainWindow::openFolder(const QString& dir)
     loadClassList();
 
     if (annotationClassItems.empty()) {
-        // Add sample classes
-        addNewClass("Clean",        QColor(0,   255, 0,  64));
-        addNewClass("Minor defect", QColor(255, 255, 0, 128));
-        addNewClass("Major defect", QColor(255, 0,   0, 128));
+        // Add sample classes 
+        addNewClass("Green Leaf Sun",   QColor(100, 255, 0, 128));
+        addNewClass("Brown Leaf Sun",   QColor(100, 50,  0, 128));
+        addNewClass("Soil Sun",         QColor(255, 200, 0, 128));
+        addNewClass("Green Leaf Shade", QColor(255, 0,   100,  128));
+        addNewClass("Brown Leaf Shade", QColor(100, 150, 255, 128));
+        addNewClass("Soil Shade",       QColor(100, 0,   100, 128));
+        addNewClass("Other",            QColor(255, 100,   0, 128));
+
     }
 
     QApplication::restoreOverrideCursor();
