@@ -404,7 +404,9 @@ void MainWindow::openFolder(const QString& dir)
         addNewClass("Brown Leaf Shade", QColor(100, 150, 255, 128));
         addNewClass("Soil Shade",       QColor(100, 0,   100, 128));
         addNewClass("Other",            QColor(255, 100,   0, 128));
-
+        addNewClass("Stem",             QColor(50, 0,   100, 128));
+        addNewClass("Flower",           QColor(100, 100,   0, 128));
+        addNewClass("Other",            QColor(100, 0,   50, 128));
     }
 
     QApplication::restoreOverrideCursor();
