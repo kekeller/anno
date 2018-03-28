@@ -13,9 +13,9 @@ TEMPLATE = app
 
 QMAKE_CXXFLAGS += -std=c++11
 
-win32 {
-    LIBS += Shell32.lib
-}
+#win32 {
+    #LIBS += shell32.lib
+#}
 
 SOURCES += main.cpp \
     mainwindow.cpp \
