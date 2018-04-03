@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>362</width>
-    <height>410</height>
+    <height>356</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,7 +20,7 @@
    <property name="geometry">
     <rect>
      <x>160</x>
-     <y>350</y>
+     <y>310</y>
      <width>171</width>
      <height>32</height>
     </rect>
@@ -51,28 +51,6 @@
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QLabel" name="installerLocation">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>140</y>
-     <width>311</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The latest installer for Windows can be found here:&lt;br/&gt;&lt;a href=&quot;https://ci.appveyor.com/project/reunanen/anno/build/artifacts&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://ci.appveyor.com/project/reunanen/anno/build/artifacts&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-   </property>
-   <property name="wordWrap">
-    <bool>true</bool>
-   </property>
-   <property name="openExternalLinks">
-    <bool>true</bool>
-   </property>
-   <property name="textInteractionFlags">
-    <set>Qt::LinksAccessibleByMouse</set>
-   </property>
-  </widget>
   <widget class="QLabel" name="license">
    <property name="geometry">
     <rect>
@@ -99,23 +77,10 @@
     </rect>
    </property>
    <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The source code is available here:&lt;br/&gt;&lt;a href=&quot;https://github.com/reunanen/anno&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/reunanen/anno&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The source code is available here:&lt;br/&gt;https://github.com/kekeller/anno&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
    <property name="openExternalLinks">
     <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QLabel" name="copyright">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>310</y>
-     <width>311</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Copyright (c) 2017 Juha Reunanen / Tomaattinen Ltd</string>
    </property>
   </widget>
   <widget class="QLabel" name="version">
@@ -142,6 +107,22 @@
    </property>
    <property name="text">
     <string>unofficial</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="sourceCodeLocation_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>140</y>
+     <width>311</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Original Copyright (c) 2017 Juha Reunanen/Tomaattinen Ltd&lt;/p&gt;&lt;p&gt;Modified Program Copyright (c) 2018 Kevin Keller &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="openExternalLinks">
+    <bool>true</bool>
    </property>
   </widget>
  </widget>
