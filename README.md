@@ -1,7 +1,7 @@
-#anno 
+# anno 
 A desktop application that can be used to annotate images for semantic segmentation purposes. This fork is designed for labelling a dataset used for crop coverage classification at ETH Zurich. 
 
-#Build Linux
+# Build Linux
 1. Make sure to init the git submodules:
 	
 	git submodule update --init --recursive
@@ -18,7 +18,7 @@ A desktop application that can be used to annotate images for semantic segmentat
 
 	> make
 
-#Build Windows
+# Build Windows
 1. Download and install QT Creator 4.6.0
 
 2. During installation select QT version 5.10.1:
@@ -31,7 +31,7 @@ A desktop application that can be used to annotate images for semantic segmentat
 
 These instructions are a good guide for the installation: https://www.ics.com/blog/getting-started-qt-and-qt-creator-windows
 
-#Generate Windows EXE file
+# Generate Windows EXE file
 1. In QT Creator, in the bottom left change the build settings to 'Release' from 'Debug'
 
 2. In the resulting output 'Release' folder, there will be an exe file created. This exe file is missing the required .dll files to run alone. 
