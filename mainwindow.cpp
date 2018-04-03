@@ -397,16 +397,15 @@ void MainWindow::openFolder(const QString& dir)
 
     if (annotationClassItems.empty()) {
         // Add sample classes 
-        addNewClass("Green Leaf Sun",   QColor(100, 255, 0, 128));
-        addNewClass("Brown Leaf Sun",   QColor(100, 50,  0, 128));
-        addNewClass("Soil Sun",         QColor(255, 200, 0, 128));
-        addNewClass("Green Leaf Shade", QColor(255, 0,   100,  128));
-        addNewClass("Brown Leaf Shade", QColor(100, 150, 255, 128));
-        addNewClass("Soil Shade",       QColor(100, 0,   100, 128));
-        addNewClass("Other",            QColor(255, 100,   0, 128));
-        addNewClass("Stem",             QColor(50, 0,   100, 128));
-        addNewClass("Flower",           QColor(100, 100,   0, 128));
-        addNewClass("Other",            QColor(100, 0,   50, 128));
+        addNewClass("Green Leaf Sun",   QColor(000, 255, 000, 128)); // green
+        addNewClass("Brown Leaf Sun",   QColor(100, 050, 000, 128)); // brown
+        addNewClass("Soil Sun",         QColor(255, 255, 000, 128)); // yellow
+        addNewClass("Green Leaf Shade", QColor(000, 100, 000, 128)); // dark green
+        addNewClass("Brown Leaf Shade", QColor(255, 100, 255, 128)); // fuschia
+        addNewClass("Soil Shade",       QColor(255, 150, 050, 128)); // orange
+        addNewClass("Other",            QColor(150, 200, 255, 128)); // blue
+        addNewClass("Stem",             QColor(255, 000, 000, 128)); // red
+        addNewClass("Flower",           QColor(100, 000, 200, 128)); // purple
     }
 
     QApplication::restoreOverrideCursor();
